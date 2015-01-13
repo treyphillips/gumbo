@@ -25,21 +25,27 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
+  width: 31.76157%;
+  /*   @include omega(3n); */ }
   .meal:last-child {
     margin-right: 0; }
-  .meal:nth-child(3n) {
-    margin-right: 0; }
-  .meal:nth-child(3n+1) {
-    clear: left; }
-  @media screen and (min-width: 500px) and (max-width: 840px) {
+  @media screen and (min-width: 501px) and (max-width: 840px) {
     .meal {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
       .meal:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+      .meal img,
+      .meal .foood {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .meal img:last-child,
+        .meal .foood:last-child {
+          margin-right: 0; } }
   @media screen and (max-width: 500px) {
     .meal {
       float: left;

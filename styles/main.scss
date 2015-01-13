@@ -2,7 +2,7 @@
 $visual-grid: false;
 @import '../neat/neat';
 $cool: #4ca5d9;
-$tablet: new-breakpoint(min-width 500px max-width 840px);
+$tablet: new-breakpoint(min-width 501px max-width 840px 12);
 $mobile: new-breakpoint(max-width 500px);
 
 body {
@@ -17,11 +17,15 @@ body {
 .meal {
   color: $cool;
   @include span-columns(4);
-  @include omega(3n);
+/*   @include omega(3n); */
 
 
   @include media($tablet) {
     @include span-columns(12);
+    img,
+    .foood {
+      @include span-columns(6);
+    }
   }
 
   @include media($mobile) {
